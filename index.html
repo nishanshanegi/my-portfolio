@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nishansha Negi - Portfolio</title>
-    
+
     <!-- Fonts: Plus Jakarta Sans (Modern SaaS Look) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -19,26 +21,35 @@
             --bg-body: #FDFDFD;
             --bg-card: #FFFFFF;
             --bg-secondary: #F4F6F8;
-            
+
             --text-main: #1A1C1E;
             --text-muted: #6C7278;
-            
-            --accent-primary: #1A1C1E; /* Black primary */
-            --accent-orange: #FF6B2C; /* Pop color */
+
+            --accent-primary: #1A1C1E;
+            /* Black primary */
+            --accent-orange: #FF6B2C;
+            /* Pop color */
             --accent-purple: #9D8AFE;
             --accent-yellow: #FEEA9A;
             --accent-blue: #E3F2FD;
-            
+
             --radius-xl: 32px;
             --radius-lg: 24px;
             --radius-md: 16px;
-            
-            --shadow: 0 4px 20px rgba(0,0,0,0.03);
-            --shadow-hover: 0 15px 40px rgba(0,0,0,0.08);
+
+            --shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+            --shadow-hover: 0 15px 40px rgba(0, 0, 0, 0.08);
         }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
 
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
@@ -58,7 +69,7 @@
             max-width: 1200px;
             background: rgba(255, 255, 255, 0.85);
             backdrop-filter: blur(12px);
-            border: 1px solid rgba(0,0,0,0.05);
+            border: 1px solid rgba(0, 0, 0, 0.05);
             padding: 0.8rem 2rem;
             border-radius: 100px;
             z-index: 1000;
@@ -68,12 +79,33 @@
             box-shadow: var(--shadow);
         }
 
-        .logo { font-size: 1.2rem; font-weight: 800; letter-spacing: -0.5px; }
-        .logo span { color: var(--accent-orange); }
+        .logo {
+            font-size: 1.2rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
 
-        .nav-links { display: flex; gap: 2rem; list-style: none; }
-        .nav-links a { color: var(--text-muted); text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: 0.3s; }
-        .nav-links a:hover { color: var(--text-main); }
+        .logo span {
+            color: var(--accent-orange);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--text-main);
+        }
 
         .nav-btn {
             background: var(--accent-primary);
@@ -85,7 +117,10 @@
             font-size: 0.9rem;
             transition: transform 0.2s;
         }
-        .nav-btn:hover { transform: scale(1.05); }
+
+        .nav-btn:hover {
+            transform: scale(1.05);
+        }
 
         /* --- Hero Section (Your Preferred Design) --- */
         .hero {
@@ -111,6 +146,7 @@
             display: inline-block;
             z-index: 1;
         }
+
         .hero-content h1 .highlight::after {
             content: '';
             position: absolute;
@@ -130,7 +166,11 @@
             max-width: 90%;
         }
 
-        .cta-group { display: flex; gap: 1rem; margin-bottom: 3rem; }
+        .cta-group {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
 
         .btn-primary {
             background: var(--accent-primary);
@@ -141,7 +181,7 @@
             font-weight: 600;
             transition: all 0.3s;
         }
-        
+
         .btn-outline {
             background: transparent;
             border: 2px solid #E5E7EB;
@@ -153,7 +193,11 @@
             transition: all 0.3s;
         }
 
-        .btn-primary:hover, .btn-outline:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+        .btn-primary:hover,
+        .btn-outline:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow);
+        }
 
         /* Tech Ticker */
         .tech-stack-label {
@@ -166,7 +210,11 @@
             display: block;
         }
 
-        .hero-skills { display: flex; flex-wrap: wrap; gap: 0.8rem; }
+        .hero-skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+        }
 
         .skill-pill {
             background: white;
@@ -180,11 +228,24 @@
             gap: 8px;
             transition: 0.3s;
         }
-        .skill-pill i { color: var(--accent-orange); }
-        .skill-pill:hover { border-color: var(--accent-orange); transform: translateY(-2px); }
+
+        .skill-pill i {
+            color: var(--accent-orange);
+        }
+
+        .skill-pill:hover {
+            border-color: var(--accent-orange);
+            transform: translateY(-2px);
+        }
 
         /* Hero Visual */
-        .hero-visual { position: relative; height: 500px; display: flex; justify-content: center; align-items: center; }
+        .hero-visual {
+            position: relative;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
         .profile-card {
             width: 320px;
@@ -192,51 +253,100 @@
             background: white;
             padding: 12px;
             border-radius: var(--radius-xl);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
             transform: rotate(-3deg);
             z-index: 2;
             transition: transform 0.4s;
-            border: 1px solid rgba(0,0,0,0.05);
+            border: 1px solid rgba(0, 0, 0, 0.05);
         }
-        .profile-card img { width: 100%; height: 100%; object-fit: cover; border-radius: 20px; }
-        .profile-card:hover { transform: rotate(0deg) scale(1.02); }
+
+        .profile-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+
+        .profile-card:hover {
+            transform: rotate(0deg) scale(1.02);
+        }
 
         .floating-stat {
             position: absolute;
             background: white;
             padding: 0.8rem 1.2rem;
             border-radius: 16px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
             display: flex;
             align-items: center;
             gap: 12px;
             z-index: 3;
             animation: float 6s ease-in-out infinite;
         }
-        .float-1 { top: 60px; left: 10px; animation-delay: 0s; }
-        .float-2 { bottom: 80px; right: -10px; animation-delay: 1.5s; }
-        
+
+        .float-1 {
+            top: 60px;
+            left: 10px;
+            animation-delay: 0s;
+        }
+
+        .float-2 {
+            bottom: 80px;
+            right: -10px;
+            animation-delay: 1.5s;
+        }
+
         .stat-icon {
             width: 36px;
             height: 36px;
             background: var(--accent-yellow);
             border-radius: 50%;
-            display: flex; align-items: center; justify-content: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
-        .stat-text h4 { font-size: 0.9rem; margin: 0; }
-        .stat-text p { font-size: 0.75rem; color: var(--text-muted); margin: 0; }
+
+        .stat-text h4 {
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
+        .stat-text p {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin: 0;
+        }
 
         /* --- Shared Section Styles --- */
-        section { padding: 5rem 5%; }
-        
-        .section-header { text-align: center; margin-bottom: 4rem; max-width: 700px; margin-left: auto; margin-right: auto; }
-        .section-tag {
-            background: #FFF0E6; color: var(--accent-orange);
-            padding: 0.4rem 1rem; border-radius: 50px;
-            font-size: 0.85rem; font-weight: 700; text-transform: uppercase;
-            display: inline-block; margin-bottom: 1rem;
+        section {
+            padding: 5rem 5%;
         }
-        .section-title { font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem; }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .section-tag {
+            background: #FFF0E6;
+            color: var(--accent-orange);
+            padding: 0.4rem 1rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
 
         /* --- Experience (Standard Grid) --- */
         .experience-grid {
@@ -254,175 +364,251 @@
             border: 1px solid #F0F0F0;
             transition: 0.3s;
         }
-        .info-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-hover); }
-        
-        .card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem; }
-        .company-logo { width: 50px; height: 50px; border-radius: 10px; object-fit: cover; }
-        .role { font-size: 1.2rem; font-weight: 700; margin-bottom: 0.2rem; }
-        .company { color: var(--accent-orange); font-weight: 600; font-size: 0.95rem; }
-        .timeline { font-size: 0.85rem; color: var(--text-muted); background: var(--bg-secondary); padding: 4px 10px; border-radius: 20px; }
-        .desc { font-size: 0.95rem; color: var(--text-muted); line-height: 1.7; }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+
+        .company-logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .role {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 0.2rem;
+        }
+
+        .company {
+            color: var(--accent-orange);
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .timeline {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            background: var(--bg-secondary);
+            padding: 4px 10px;
+            border-radius: 20px;
+        }
+
+        .desc {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
 
         /* --- PROJECTS: The "Different Sizes" Grid (Mosaic) --- */
         .projects-mosaic {
             display: grid;
-            grid-template-columns: repeat(12, 1fr); /* 12 Column Grid */
+            grid-template-columns: repeat(12, 1fr);
+            /* 12 Column Grid */
             gap: 1.5rem;
             max-width: 1200px;
             margin: 0 auto;
         }
 
-    /* =========================================
+        /* =========================================
    PROJECTS SECTION CSS
    ========================================= */
 
-/* Section Padding */
-#projects { 
-    padding: 5rem 5%; 
-    position: relative;
-}
+        /* Section Padding */
+        #projects {
+            padding: 5rem 5%;
+            position: relative;
+        }
 
-/* 1. The Grid Layout (Mosaic) */
-.projects-mosaic {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 1.5rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+        /* 1. The Grid Layout (Mosaic) */
+        .projects-mosaic {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
 
-/* 2. The Card Container */
-.project-card {
-    background: var(--bg-card);
-    border-radius: var(--radius-lg);
-    overflow: hidden;
-    border: 1px solid #F0F0F0;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    display: flex;
-    flex-direction: column;
-    position: relative; /* Essential for layering */
-    z-index: 1;
-}
+        /* 2. The Card Container */
+        .project-card {
+            background: var(--bg-card);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            border: 1px solid #F0F0F0;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            /* Essential for layering */
+            z-index: 1;
+        }
 
-.project-card:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-hover);
-}
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-hover);
+        }
 
-/* 3. Grid Spans (Sizing) */
-.span-7 { grid-column: span 7; }
-.span-5 { grid-column: span 5; }
-.span-4 { grid-column: span 4; }
+        /* 3. Grid Spans (Sizing) */
+        .span-7 {
+            grid-column: span 7;
+        }
 
-/* 4. Background Tints */
-.bg-tint-blue { background: #f0f7ff; border: none; }
-.bg-tint-yellow { background: #fffdf0; border: none; }
+        .span-5 {
+            grid-column: span 5;
+        }
 
-/* 5. Image Area */
-.project-img-container {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    z-index: 1; /* Lowest layer inside card */
-}
+        .span-4 {
+            grid-column: span 4;
+        }
 
-/* Adjust Image Heights based on card size */
-.span-7 .project-img-container { height: 300px; }
-.span-5 .project-img-container { height: 300px; }
-.span-4 .project-img-container { height: 220px; }
+        /* 4. Background Tints */
+        .bg-tint-blue {
+            background: #f0f7ff;
+            border: none;
+        }
 
-.project-img-container img {
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover;
-    transition: transform 0.5s ease;
-}
+        .bg-tint-yellow {
+            background: #fffdf0;
+            border: none;
+        }
 
-.project-card:hover .project-img-container img { 
-    transform: scale(1.08); 
-}
+        /* 5. Image Area */
+        .project-img-container {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+            /* Lowest layer inside card */
+        }
 
-/* 6. Text Content Area */
-.project-content { 
-    padding: 1.5rem; 
-    flex-grow: 1; 
-    display: flex; 
-    flex-direction: column; 
-    position: relative;
-    z-index: 2; /* Middle layer */
-}
+        /* Adjust Image Heights based on card size */
+        .span-7 .project-img-container {
+            height: 300px;
+        }
 
-.project-title { 
-    font-size: 1.25rem; 
-    font-weight: 700; 
-    margin-bottom: 0.5rem; 
-}
+        .span-5 .project-img-container {
+            height: 300px;
+        }
 
-.project-tech { 
-    font-size: 0.85rem; 
-    color: var(--accent-orange); 
-    font-weight: 600; 
-    margin-bottom: 0.8rem; 
-}
+        .span-4 .project-img-container {
+            height: 220px;
+        }
 
-.project-desc { 
-    font-size: 0.9rem; 
-    color: var(--text-muted); 
-    margin-bottom: 1.5rem; 
-    flex-grow: 1; 
-    /* Clamp text to 3 lines */
-    display: -webkit-box; 
-    -webkit-line-clamp: 3; 
-    -webkit-box-orient: vertical; 
-    overflow: hidden; 
-}
+        .project-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
 
-/* 7. Button Container */
-.project-links { 
-    margin-top: auto; 
-    display: flex; 
-    gap: 10px;
-    position: relative;
-    z-index: 10; /* High layer to ensure clickability */
-}
+        .project-card:hover .project-img-container img {
+            transform: scale(1.08);
+        }
 
-/* 8. The Buttons (CRITICAL FIX FOR REDIRECTS) */
-.btn-sm {
-    padding: 8px 16px; 
-    background: var(--bg-secondary); 
-    color: var(--text-main);
-    border-radius: 20px; 
-    text-decoration: none; 
-    font-size: 0.85rem; 
-    font-weight: 600; 
-    transition: 0.2s;
-    
-    /* Forces button to sit on top of everything */
-    position: relative; 
-    z-index: 50; 
-    cursor: pointer;
-    pointer-events: auto;
-}
+        /* 6. Text Content Area */
+        .project-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            z-index: 2;
+            /* Middle layer */
+        }
 
-.btn-sm:hover { 
-    background: var(--accent-primary); 
-    color: white; 
-}
+        .project-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
 
-/* 9. Mobile Responsiveness */
-@media (max-width: 992px) {
-    .span-7, .span-5, .span-4 { 
-        grid-column: span 12; /* Full width on mobile */
-    }
-    
-    .project-img-container { 
-        height: 250px !important; 
-    }
-}
+        .project-tech {
+            font-size: 0.85rem;
+            color: var(--accent-orange);
+            font-weight: 600;
+            margin-bottom: 0.8rem;
+        }
+
+        .project-desc {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+            /* Clamp text to 3 lines */
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        /* 7. Button Container */
+        .project-links {
+            margin-top: auto;
+            display: flex;
+            gap: 10px;
+            position: relative;
+            z-index: 10;
+            /* High layer to ensure clickability */
+        }
+
+        /* 8. The Buttons (CRITICAL FIX FOR REDIRECTS) */
+        .btn-sm {
+            padding: 8px 16px;
+            background: var(--bg-secondary);
+            color: var(--text-main);
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 600;
+            transition: 0.2s;
+
+            /* Forces button to sit on top of everything */
+            position: relative;
+            z-index: 50;
+            cursor: pointer;
+            pointer-events: auto;
+        }
+
+        .btn-sm:hover {
+            background: var(--accent-primary);
+            color: white;
+        }
+
+        /* 9. Mobile Responsiveness */
+        @media (max-width: 992px) {
+
+            .span-7,
+            .span-5,
+            .span-4 {
+                grid-column: span 12;
+                /* Full width on mobile */
+            }
+
+            .project-img-container {
+                height: 250px !important;
+            }
+        }
 
         /* Specific background tints for visual variety (FineX style) */
-        .bg-tint-blue { background: #f0f7ff; border: none; }
-        .bg-tint-yellow { background: #fffdf0; border: none; }
+        .bg-tint-blue {
+            background: #f0f7ff;
+            border: none;
+        }
+
+        .bg-tint-yellow {
+            background: #fffdf0;
+            border: none;
+        }
 
         /* --- Achievements (New Section) --- */
         .achievements-list {
@@ -432,6 +618,7 @@
             flex-direction: column;
             gap: 1rem;
         }
+
         .achievement-item {
             background: white;
             padding: 1.5rem;
@@ -442,10 +629,22 @@
             border: 1px solid #f0f0f0;
             transition: 0.3s;
         }
-        .achievement-item:hover { border-color: var(--accent-orange); transform: translateX(10px); }
-        .trophy-icon { 
-            width: 50px; height: 50px; background: #FFF0E6; color: var(--accent-orange); 
-            border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;
+
+        .achievement-item:hover {
+            border-color: var(--accent-orange);
+            transform: translateX(10px);
+        }
+
+        .trophy-icon {
+            width: 50px;
+            height: 50px;
+            background: #FFF0E6;
+            color: var(--accent-orange);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
         }
 
         /* --- Footer --- */
@@ -456,33 +655,91 @@
             border-radius: 40px 40px 0 0;
             text-align: center;
         }
-        
-        .social-row { display: flex; justify-content: center; gap: 1.5rem; margin-top: 2rem; margin-bottom: 2rem; }
-        .social-btn {
-            width: 50px; height: 50px; background: white; border-radius: 50%;
-            display: flex; align-items: center; justify-content: center;
-            color: var(--text-main); text-decoration: none; font-size: 1.2rem;
-            transition: 0.3s; box-shadow: var(--shadow);
-        }
-        .social-btn:hover { background: var(--accent-primary); color: white; transform: translateY(-3px); }
 
-        @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-10px); } }
+        .social-row {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .social-btn {
+            width: 50px;
+            height: 50px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-main);
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: 0.3s;
+            box-shadow: var(--shadow);
+        }
+
+        .social-btn:hover {
+            background: var(--accent-primary);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
 
         /* Mobile Responsive */
         @media (max-width: 992px) {
-            .hero { grid-template-columns: 1fr; padding-top: 120px; text-align: center; gap: 3rem; }
-            .hero-content h1 { font-size: 3rem; }
-            .hero-content p { margin: 0 auto 2rem auto; }
-            .cta-group { justify-content: center; }
-            .hero-skills { justify-content: center; }
-            .nav-links { display: none; }
-            
+            .hero {
+                grid-template-columns: 1fr;
+                padding-top: 120px;
+                text-align: center;
+                gap: 3rem;
+            }
+
+            .hero-content h1 {
+                font-size: 3rem;
+            }
+
+            .hero-content p {
+                margin: 0 auto 2rem auto;
+            }
+
+            .cta-group {
+                justify-content: center;
+            }
+
+            .hero-skills {
+                justify-content: center;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
             /* Grid collapse */
-            .span-7, .span-5, .span-4 { grid-column: span 12; }
-            .project-img-container { height: 250px !important; }
+            .span-7,
+            .span-5,
+            .span-4 {
+                grid-column: span 12;
+            }
+
+            .project-img-container {
+                height: 250px !important;
+            }
         }
     </style>
 </head>
+
 <body>
 
     <!-- Pill Navigation -->
@@ -501,53 +758,81 @@
     <!-- 1. HERO SECTION (FineX Style - Unchanged) -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Building <span class="highlight">Intelligent</span> Web Experiences.</h1>
-            <p>Hello! I’m Nishansha Negi, a software developer with a Master’s degree in Computer Applications. Currently, I’m working on an AI-based workflow and agent orchestration platform, where I contribute to building the product frontend, integrating APIs, and improving end-to-end workflow execution.</p>
-            <p> I have 1+ year of hands-on experience in frontend and backend development, gained through multiple production products as well as self-driven projects.</p>
-          
-           <div class="cta-group">
-    <a href="#projects" class="btn-primary">View My Work <i class="fas fa-arrow-right"></i></a>
-    
-    <!-- Updated Resume Link -->
-    <a href="./NishanshaNegi_Resume.pdf" download="Nishansha_Negi_Resume.pdf" class="btn-outline">
-        Download Resume <i class="fas fa-download" style="margin-left: 5px;"></i>
-    </a>
-</div>
+            <h1>Building <span class="highlight">AI-Powered</span> Scalable Systems.</h1>
+
+            <p>Hello! I’m Nishansha Negi, a Full-Stack Developer with a strong focus on backend systems and 1.6+ years
+                of experience building scalable, AI-driven applications.</p>
+
+            <p>Currently, I work on an AI-based workflow and agent orchestration platform, where I develop backend
+                services using FastAPI and design interactive frontend systems with React. My work involves building
+                asynchronous architectures, integrating APIs, and enabling intelligent, end-to-end agentic workflows.
+            </p>
+            <div class="cta-group">
+                <a href="#projects" class="btn-primary">View My Work <i class="fas fa-arrow-right"></i></a>
+
+                <!-- Updated Resume Link -->
+                <a href="./NishanshaNegi_Resume.pdf" download="Nishansha_Negi_Resume.pdf" class="btn-outline">
+                    Download Resume <i class="fas fa-download" style="margin-left: 5px;"></i>
+                </a>
+            </div>
 
             <!-- Skills from Resume -->
             <div>
                 <span class="tech-stack-label">Technical Toolkit</span>
-             <div class="hero-skills">
-                 <div class="skill-pill"><i class="fas fa-code"></i> C++</div>
-    <!-- Frontend -->
-    <div class="skill-pill"><i class="fab fa-react"></i> React.js</div>
-    <div class="skill-pill"><i class="fas fa-project-diagram"></i> React Flow</div>
+                <div class="hero-skills">
 
-    <!-- Backend -->
-    <div class="skill-pill"><i class="fab fa-node-js"></i> Node.js</div>
-    <div class="skill-pill"><i class="fas fa-code"></i> Express.js</div>
-    <div class="skill-pill"><i class="fab fa-python"></i> Python (Flask)</div>
+                    <!-- Languages -->
+                    <div class="skill-pill"><i class="fas fa-code"></i> C++</div>
+                    <div class="skill-pill"><i class="fab fa-python"></i> Python</div>
+                    <div class="skill-pill"><i class="fab fa-js"></i> JavaScript</div>
 
-    <!-- Databases & Streaming -->
-    <div class="skill-pill"><i class="fas fa-database"></i> MongoDB</div>
-    <div class="skill-pill"><i class="fas fa-stream"></i> Kafka</div>
+                    <!-- Frontend -->
+                    <div class="skill-pill"><i class="fab fa-react"></i> React.js</div>
+                    <div class="skill-pill"><i class="fas fa-project-diagram"></i> React Flow</div>
+                    <div class="skill-pill"><i class="fas fa-wind"></i> Tailwind CSS</div>
 
-    <!-- Cloud -->
-    <div class="skill-pill"><i class="fab fa-aws"></i> AWS</div>
-    <!-- Github -->
-    <div class="skill-pill"><i class="fab fa-github"></i> Git & GitHub</div>
+                    <!-- Backend -->
+                    <div class="skill-pill"><i class="fas fa-server"></i> Node.js</div>
+                    <div class="skill-pill"><i class="fas fa-code"></i> Express.js</div>
+                    <div class="skill-pill"><i class="fas fa-bolt"></i> FastAPI</div>
+                    <div class="skill-pill"><i class="fas fa-network-wired"></i> REST APIs</div>
 
-    <!-- Programming -->
-   
-</div>
+                    <!-- Databases -->
+                    <div class="skill-pill"><i class="fas fa-database"></i> MongoDB</div>
+                    <div class="skill-pill"><i class="fas fa-database"></i> PostgreSQL</div>
+                    <div class="skill-pill"><i class="fas fa-database"></i> MySQL</div>
+                    <div class="skill-pill"><i class="fas fa-memory"></i> Redis</div>
 
+                    <!-- AI / Advanced -->
+                    <div class="skill-pill"><i class="fas fa-brain"></i> RAG Systems</div>
+                    <div class="skill-pill"><i class="fas fa-robot"></i> LLM Integration</div>
+                    <div class="skill-pill"><i class="fas fa-vector-square"></i> Vector DB (Milvus)</div>
+
+                    <!-- Cloud & DevOps -->
+                    <div class="skill-pill"><i class="fab fa-aws"></i> AWS (SQS, S3, EC2)</div>
+                    <div class="skill-pill"><i class="fab fa-docker"></i> Docker</div>
+
+                    <!-- Tools -->
+                    <div class="skill-pill"><i class="fab fa-github"></i> Git & GitHub</div>
+                    <div class="skill-pill"><i class="fas fa-paper-plane"></i> Postman</div>
+
+                </div>
             </div>
+
+            <!-- Programming -->
+
+        </div>
+
+        </div>
         </div>
 
         <div class="hero-visual">
             <div class="floating-stat float-1">
                 <div class="stat-icon">⚡</div>
-                <div class="stat-text"><h4>1+ Years</h4><p>Pro Experience</p></div>
+                <div class="stat-text">
+                    <h4>1.5+ Years</h4>
+                    <p>Pro Experience</p>
+                </div>
             </div>
 
             <div class="profile-card">
@@ -555,8 +840,12 @@
             </div>
 
             <div class="floating-stat float-2">
-                <div class="stat-icon" style="background:var(--accent-purple); color:white;"><i class="fas fa-brain"></i></div>
-                <div class="stat-text"><h4>Building</h4><p>Agentic AI Orchestrater</p></div>
+                <div class="stat-icon" style="background:var(--accent-purple); color:white;"><i
+                        class="fas fa-brain"></i></div>
+                <div class="stat-text">
+                    <h4>Building</h4>
+                    <p>Agentic AI Orchestrater</p>
+                </div>
             </div>
         </div>
     </section>
@@ -567,7 +856,7 @@
             <span class="section-tag">Career Path</span>
             <h2 class="section-title">Technical Experience</h2>
         </div>
-        
+
         <div class="experience-grid">
             <!-- Experience 1 -->
             <div class="info-card">
@@ -580,28 +869,39 @@
                 </div>
                 <div class="desc">
                     <p style="margin-bottom:10px;">
-  
-</p>
+                        Full-Stack Developer with a strong focus on building scalable backend systems and AI-driven
+                        applications.
+                    </p>
 
-<ul style="padding-left: 20px; font-size: 0.9rem; color: var(--text-muted);">
-  <li>
-    <strong>WiiZ Atlas – AI Agent Orchestration Platform:</strong> Core developer contributor working on a no-code visual workflow builder product, dynamic node-based UI, API integrations, and end-to-end workflow execution.
-</li>
-<li>
-    Built interactive frontend dashboards and integrated backend APIs for data visualization, analytics, and workflow-driven applications.
-</li>
-<li>
-    Worked on AI and computer-vision–based systems, contributing to frontend interfaces, backend APIs, and data processing pipelines for real-time and batch use cases.
-</li>
-<li>
-    Developed full-stack features including REST APIs, dashboards, and asynchronous data workflows for analytics and performance-tracking platforms.
-</li>
-<li>
-    Designed role-based contributor and admin interfaces, along with backend APIs and database integrations for content and platform management systems.
-</li>
+                    <ul style="padding-left: 20px; font-size: 0.9rem; color: var(--text-muted);">
 
-</ul>
+                        <li>
+                            <strong>WiiZ Atlas – AI Agent Orchestration Platform:</strong> Core contributor to a
+                            node-based workflow system, building dynamic React interfaces and developing backend
+                            orchestration using FastAPI and AWS SQS for asynchronous execution.
+                        </li>
 
+                        <li>
+                            Designed and implemented scalable backend services handling concurrent execution
+                            messages using a decoupled producer-consumer architecture.
+                        </li>
+
+                        <li>
+                            Built and optimized AI-driven pipelines, including RAG-based knowledge systems with vector
+                            databases (Milvus), achieving low-latency semantic search.
+                        </li>
+
+                        <li>
+                            Developed full-stack features including REST APIs, authentication (JWT), and interactive
+                            dashboards, ensuring seamless frontend-backend integration.
+                        </li>
+
+                        <li>
+                            Architected microservices and backend APIs with performance optimizations, improving
+                            response time and system reliability.
+                        </li>
+
+                    </ul>
                 </div>
             </div>
 
@@ -615,13 +915,20 @@
                     <span class="timeline">Feb 2024 - Aug 2024</span>
                 </div>
                 <div class="desc">
-                    <p style="margin-bottom:10px;">Engaged in pharmaceutical and public sector projects. Gained hands-on experience in frontend, backend, databases, and SAS tools.</p>
+                    <p style="margin-bottom:10px;">Engaged in pharmaceutical and public sector projects. Gained hands-on
+                        experience in frontend, backend, databases, and SAS tools.</p>
                     <ul style="padding-left: 20px; font-size: 0.9rem; color: var(--text-muted);">
-                        <li>Worked extensively with <strong>SAS Enterprise Guide (EG)</strong> for data preparation, transformation, and analysis using Query Builder, SAS Macros, and custom programming. Managed ETL processes and workflow pipelines to support analytical use cases.</li>
-                        <li>Developed and trained analytical models, and created dynamic statistical reports and dashboards using <strong>SAS Visual Analytics (VA)</strong>.</li>
-                        <li>Contributed to a Generative AI solution by integrating LLaMA-3, which was deployed within SAS Visual Analytics for intelligent insights and querying.</li>
-                        <li>Winner of the <strong>NuReka Hackathon 2024</strong> for developing the Golden Batch Solution, focused on process optimization and data-driven insights.</li>
-                        <li>Selected for the <strong>SAS Innovate Tour 2024 (Mumbai)</strong> for a Generative AI project, recognizing innovation and technical contribution.</li>
+                        <li>Worked extensively with <strong>SAS Enterprise Guide (EG)</strong> for data preparation,
+                            transformation, and analysis using Query Builder, SAS Macros, and custom programming.
+                            Managed ETL processes and workflow pipelines to support analytical use cases.</li>
+                        <li>Developed and trained analytical models, and created dynamic statistical reports and
+                            dashboards using <strong>SAS Visual Analytics (VA)</strong>.</li>
+                        <li>Contributed to a Generative AI solution by integrating LLaMA-3, which was deployed within
+                            SAS Visual Analytics for intelligent insights and querying.</li>
+                        <li>Winner of the <strong>NuReka Hackathon 2024</strong> for developing the Golden Batch
+                            Solution, focused on process optimization and data-driven insights.</li>
+                        <li>Selected for the <strong>SAS Innovate Tour 2024 (Mumbai)</strong> for a Generative AI
+                            project, recognizing innovation and technical contribution.</li>
                     </ul>
                 </div>
             </div>
@@ -629,94 +936,111 @@
     </section>
 
     <!-- 3. PROJECTS (Mosaic Grid - Old Layout Logic, New Style) -->
- <section id="projects">
-    <div class="section-header">
-        <span class="section-tag">Portfolio</span>
-        <h2 class="section-title">Featured Projects</h2>
-        <p style="color:var(--text-muted)">Selected works from my GitHub.</p>
-    </div>
-
-    <div class="projects-mosaic">
-        
-        <!-- Project 1: StudyNotion -->
-        <div class="project-card span-7 bg-tint-blue">
-            <div class="project-img-container">
-                <img src="./img/Studyyn.png" alt="StudyNotion">
-            </div>
-            <div class="project-content">
-                <div class="project-title">StudyNotion EdTech</div>
-                <div class="project-tech">MERN Stack • Redux • Razorpay</div>
-                <p class="project-desc">Fully functional ed-tech platform allowing users to create, consume, and rate educational content. Features OTP/JWT authentication, instructor dashboards, and Razorpay integration.</p>
-                <div class="project-links">
-                    <a href="https://study-notion-frontend-mocha-ten.vercel.app/" target="_blank" class="btn-sm">Live Demo</a> 
-                    <a href="https://github.com/nishanshanegi/StudyNotion-Hosting" target="_blank" class="btn-sm">GitHub</a>
-                </div>
-            </div>
+    <section id="projects">
+        <div class="section-header">
+            <span class="section-tag">Portfolio</span>
+            <h2 class="section-title">Featured Projects</h2>
+            <p style="color:var(--text-muted)">Selected works from my GitHub.</p>
         </div>
 
-        <!-- Project 2: RestBox -->
-        <div class="project-card span-5">
-            <div class="project-img-container">
-                <img src="./img/image.png" alt="Restbox">
-            </div>
-            <div class="project-content">
-                <div class="project-title">RestBox API Client</div>
-                <div class="project-tech">React • TypeScript • Regex</div>
-                <p class="project-desc">Engineered a unique cURL command parser enabling instant request setup from a single paste. Includes persistent request history saved to localStorage for seamless UX.</p>
-                <div class="project-links">
-                    <a href="https://restbox-api-client.vercel.app/" target="_blank" class="btn-sm">Live Demo</a>
-                    <a href="https://github.com/nishanshanegi/restbox-api-client" target="_blank" class="btn-sm">GitHub</a>
+        <div class="projects-mosaic">
+
+            <!-- Project 1: StudyNotion -->
+            <div class="project-card span-7 bg-tint-blue">
+                <div class="project-img-container">
+                    <img src="./img/Studyyn.png" alt="StudyNotion">
+                </div>
+                <div class="project-content">
+                    <div class="project-title">StudyNotion EdTech</div>
+                    <div class="project-tech">MERN Stack • Redux • Razorpay</div>
+                    <p class="project-desc">Fully functional ed-tech platform allowing users to create, consume, and
+                        rate educational content. Features OTP/JWT authentication, instructor dashboards, and Razorpay
+                        integration.</p>
+                    <div class="project-links">
+                        <a href="https://study-notion-frontend-mocha-ten.vercel.app/" target="_blank"
+                            class="btn-sm">Live Demo</a>
+                        <a href="https://github.com/nishanshanegi/StudyNotion-Hosting" target="_blank"
+                            class="btn-sm">GitHub</a>
+                    </div>
                 </div>
             </div>
-        </div>
+            <div class="project-card span-5">
+                <div class="project-img-container">
+                    <img src="./img/dumpai.png" alt="DumpAI Project">
+                </div>
+                <div class="project-content">
+                    <div class="project-title">DumpAI – AI Knowledge Vault</div>
+                    <div class="project-tech">FastAPI • React • RAG • AWS</div>
 
-        <!-- Project 3: WhatsApp Analyzer -->
-        <div class="project-card span-4 bg-tint-yellow">
-            <div class="project-img-container">
-                <img src="./img/WhatsappChat1.png" alt="WhatsApp Analyzer">
-            </div>
-            <div class="project-content">
-                <div class="project-title">Chat Analyzer</div>
-                <div class="project-tech">Python • Data Visualization</div>
-                <p class="project-desc">Processes exported chat data to visualize user activity, message frequency, and word usage trends over time.</p>
-                <div class="project-links">
-                    <a href="https://github.com/nishanshanegi/WhatsApp-Chat-Analyzer" target="_blank" class="btn-sm">GitHub</a>
+                    <p class="project-desc">
+                        Built a scalable multi-modal knowledge vault enabling users to store and retrieve unstructured
+                        data (PDFs, images, text) using AI-powered semantic search. Implemented asynchronous ingestion
+                        pipelines, RAG-based retrieval, and vector search for fast and accurate responses.
+                    </p>
+
+                    <div class="project-links">
+                        <a href="https://dump-ai-ui.vercel.app/" target="_blank" class="btn-sm">Live</a>
+                        <a href="https://github.com/nishanshanegi/dump-ai-ui" target="_blank" class="btn-sm">GitHub</a>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <!-- Project 4: Password Gen -->
-        <div class="project-card span-4">
-            <div class="project-img-container">
-                <img src="./img/Password Generator.ab3e001ae849dc9e72ae.jpg" alt="Password Gen">
-            </div>
-            <div class="project-content">
-                <div class="project-title">Password Gen</div>
-                <div class="project-tech">JavaScript • CSS</div>
-                <p class="project-desc">Generates strong, random passwords based on user preferences. Features strength indicators and clipboard copy.</p>
-                <div class="project-links">
-                    <a href="https://github.com/nishanshanegi/Password-Generator" target="_blank" class="btn-sm">GitHub</a>
+            <!-- Project 2: RestBox -->
+            <div class="project-card span-4">
+                <div class="project-img-container">
+                    <img src="./img/image.png" alt="Restbox">
+                </div>
+                <div class="project-content">
+                    <div class="project-title">RestBox API Client</div>
+                    <div class="project-tech">React • TypeScript • Regex</div>
+                    <p class="project-desc">Engineered a unique cURL command parser enabling instant request setup from
+                        a single paste. Includes persistent request history saved to localStorage for seamless UX.</p>
+                    <div class="project-links">
+                        <a href="https://restbox-api-client.vercel.app/" target="_blank" class="btn-sm">Live Demo</a>
+                        <a href="https://github.com/nishanshanegi/restbox-api-client" target="_blank"
+                            class="btn-sm">GitHub</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Project 5: Weather App -->
-        <div class="project-card span-4">
-            <div class="project-img-container">
-                <img src="./img/Weather App.b6568b6ca64c903fe423.jpg" alt="Weather App">
-            </div>
-            <div class="project-content">
-                <div class="project-title">Weather App</div>
-                <div class="project-tech">API Integration</div>
-                <p class="project-desc">Real-time weather data for any city worldwide using OpenWeatherMap API and geolocation support.</p>
-                <div class="project-links">
-                    <a href="https://github.com/nishanshanegi/WeatherApp" target="_blank" class="btn-sm">GitHub</a>
+            <!-- Project 3: WhatsApp Analyzer -->
+            <div class="project-card span-4 bg-tint-yellow">
+                <div class="project-img-container">
+                    <img src="./img/WhatsappChat1.png" alt="WhatsApp Analyzer">
+                </div>
+                <div class="project-content">
+                    <div class="project-title">Chat Analyzer</div>
+                    <div class="project-tech">Python • Data Visualization</div>
+                    <p class="project-desc">Processes exported chat data to visualize user activity, message frequency,
+                        and word usage trends over time.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/nishanshanegi/WhatsApp-Chat-Analyzer" target="_blank"
+                            class="btn-sm">GitHub</a>
+                    </div>
                 </div>
             </div>
-        </div>
+            <!-- Project 4: Password Gen -->
+            <div class="project-card span-4">
+                <div class="project-img-container">
+                    <img src="./img/Password Generator.ab3e001ae849dc9e72ae.jpg" alt="Password Gen">
+                </div>
+                <div class="project-content">
+                    <div class="project-title">Password Gen</div>
+                    <div class="project-tech">JavaScript • CSS</div>
+                    <p class="project-desc">Generates strong, random passwords based on user preferences. Features
+                        strength indicators and clipboard copy.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/nishanshanegi/Password-Generator" target="_blank"
+                            class="btn-sm">GitHub</a>
+                    </div>
+                </div>
+            </div>
 
-    </div>
-</section>
+
+            <!-- Project 5: Weather App -->
+
+
+        </div>
+    </section>
     <!-- 4. ACHIEVEMENTS (New Section from Resume) -->
     <section id="achievements" style="background: var(--bg-secondary);">
         <div class="section-header">
@@ -728,21 +1052,24 @@
                 <div class="trophy-icon"><i class="fas fa-trophy"></i></div>
                 <div>
                     <h4>Won Nureka Hackathon 2024</h4>
-                    <p style="color:var(--text-muted); font-size:0.9rem;">Showcased innovative problem-solving skills for Golden Batch Solution.</p>
+                    <p style="color:var(--text-muted); font-size:0.9rem;">Showcased innovative problem-solving skills
+                        for Golden Batch Solution.</p>
                 </div>
             </div>
             <div class="achievement-item">
                 <div class="trophy-icon"><i class="fas fa-medal"></i></div>
                 <div>
                     <h4>2nd Prize, Innovative Design Project</h4>
-                    <p style="color:var(--text-muted); font-size:0.9rem;">Awarded for the WhatsApp Chat Analyzer project out of 100 entries.</p>
+                    <p style="color:var(--text-muted); font-size:0.9rem;">Awarded for the WhatsApp Chat Analyzer project
+                        out of 100 entries.</p>
                 </div>
             </div>
             <div class="achievement-item">
                 <div class="trophy-icon"><i class="fas fa-globe"></i></div>
                 <div>
                     <h4>SAS Innovate Tour Recognition</h4>
-                    <p style="color:var(--text-muted); font-size:0.9rem;">Selected for the SAS Innovate Tour 2024 in Mumbai for Generative AI project.</p>
+                    <p style="color:var(--text-muted); font-size:0.9rem;">Selected for the SAS Innovate Tour 2024 in
+                        Mumbai for Generative AI project.</p>
                 </div>
             </div>
         </div>
@@ -761,7 +1088,7 @@
                     <span class="timeline">2022 - 2024</span>
                 </div>
                 <p class="company">Poornima University, Jaipur</p>
-              
+
             </div>
             <div class="info-card">
                 <div class="card-header">
@@ -769,38 +1096,38 @@
                     <span class="timeline">2019 - 2022</span>
                 </div>
                 <p class="company">Kanoria PG College, Jaipur (Rajasthan University)</p>
-               
+
             </div>
         </div>
     </section>
 
     <!-- CONTACT / FOOTER -->
-  <section id="contact">
-    <div class="section-header">
-        <h2 class="section-title">Let’s Connect</h2>
-        <p>
-          Always interested in meaningful conversations around software engineering,
-    product development, and building scalable, real-world systems.
-        </p>
-        
-        <a href="mailto:nishanegi16112001@gmail.com"
-           style="font-size: 1.5rem; font-weight: 800; color: var(--text-main); text-decoration: none; border-bottom: 3px solid var(--accent-orange); margin-top: 1rem; display: inline-block;">
-            nishanegi16112001@gmail.com
-        </a>
+    <section id="contact">
+        <div class="section-header">
+            <h2 class="section-title">Let’s Connect</h2>
+            <p>
+                Always interested in meaningful conversations around software engineering,
+                product development, and building scalable, real-world systems.
+            </p>
 
-        <div class="social-row">
-            <a href="https://www.linkedin.com/in/nishanshanegi/" class="social-btn">
-                <i class="fab fa-linkedin-in"></i>
+            <a href="mailto:nishanegi16112001@gmail.com"
+                style="font-size: 1.5rem; font-weight: 800; color: var(--text-main); text-decoration: none; border-bottom: 3px solid var(--accent-orange); margin-top: 1rem; display: inline-block;">
+                nishanegi16112001@gmail.com
             </a>
-            <a href="https://github.com/nishanshanegi" class="social-btn">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://leetcode.com/u/nishanshanegi/" class="social-btn">
-                <i class="fas fa-code"></i>
-            </a>
+
+            <div class="social-row">
+                <a href="https://www.linkedin.com/in/nishanshanegi/" class="social-btn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/nishanshanegi" class="social-btn">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://leetcode.com/u/nishanshanegi/" class="social-btn">
+                    <i class="fas fa-code"></i>
+                </a>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
     <footer>
@@ -827,4 +1154,5 @@
         });
     </script>
 </body>
+
 </html>
